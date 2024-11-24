@@ -1,6 +1,7 @@
 # mlsys_code
 code samples for [MLSys blogs](https://jason-cs18.github.io/mlsys/).
 
+- [Agentic AI (Dify and Autogen)](https://jason-cs18.github.io/mlsys/blog/code/agentic_ai)
 - [AI Platform (Ray Cluster)](https://jason-cs18.github.io/mlsys/blog/code/ai_platform)
 - [AI Compiler (`torch.compile`)](https://jason-cs18.github.io/mlsys/blog/code/ai_compiler)
 - [GPU Programming (CUDA)](https://jason-cs18.github.io/mlsys/blog/code/gpu_compute)
