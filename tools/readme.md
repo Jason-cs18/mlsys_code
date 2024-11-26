@@ -3,6 +3,8 @@
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
 
+- [GNU Make](#gnu-make)
+    - [Use Makefile to manage ML experiments](#use-makefile-to-manage-ml-experiments)
 - [Linux](#linux)
 - [Python](#python)
   - [Typing hints](#typing-hints)
@@ -17,6 +19,45 @@
     - [Pytorch Profiler](#pytorch-profiler)
 
 </details>
+
+## GNU Make
+GNU Make is a build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles which specify how to derive the target program.
+
+[Makefile tutorial (Chinese)](https://seisman.github.io/how-to-write-makefile/overview.html)
+
+### Use Makefile to manage ML experiments
+
+Step 1: Create a Makefile in the root directory of your project.
+
+```makefile
+SHELL=/bin/bash
+
+CONDA_ACTIVATE=source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate ; conda activate
+
+.PHONY: help generate copy
+
+help:
+
+@echo "make help: print all available commands"
+
+@echo "make generate: generate a new template video (params: img_path)"
+
+@echo "make move: copy generated video to output folder (params: vid_path, target_path)"
+
+generate:
+
+($(CONDA_ACTIVATE) /mnt/data/envs/LivePortrait; python -W ignore e2e_video.py --image_path ${img_path})
+
+move:
+
+cp /mnt/data/model_zoo/LivePortrait/animations/${vid_path} /mnt/data1/production/docker/avatar_2d/${target_path}
+```
+
+Step 2: Run the `make` command with the desired target and parameters. For example, to generate a new template video, run: 
+
+```bash
+make generate img_path=/path/to/image
+```
 
 ## Linux
 ```bash
