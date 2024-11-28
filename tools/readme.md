@@ -3,20 +3,21 @@
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
 
-- [GNU Make](#gnu-make)
+- [Tools for ML developments](#tools-for-ml-developments)
+  - [GNU Make](#gnu-make)
     - [Use Makefile to manage ML experiments](#use-makefile-to-manage-ml-experiments)
-- [Linux](#linux)
-- [Python](#python)
-  - [Typing hints](#typing-hints)
-  - [Pytest](#pytest)
-  - [Logging with rich](#logging-with-rich)
-  - [Using Hydra to configure applications](#using-hydra-to-configure-applications)
-- [Kubernetes](#kubernetes)
-- [PyTorch](#pytorch)
+  - [Linux](#linux)
+  - [Python](#python)
+    - [Typing hints](#typing-hints)
+    - [Pytest](#pytest)
+    - [Logging with rich](#logging-with-rich)
+    - [Using Hydra to configure applications](#using-hydra-to-configure-applications)
+  - [Kubernetes](#kubernetes)
+  - [PyTorch](#pytorch)
     - [PyTorch hooks](#pytorch-hooks)
     - [Out of memory](#out-of-memory)
     - [Training with tensorboardX](#training-with-tensorboardx)
-    - [Pytorch Profiler](#pytorch-profiler)
+    - [Pytorch profiler](#pytorch-profiler)
 
 </details>
 
@@ -64,6 +65,7 @@ make generate img_path=/path/to/image
 tar -zcvf examples.tgz examples # package a examples.tgz
 tar -zxvf examples.tgz # unzip examples.tgz
 lsof -n -i :xxx | grep LISTEN # check pid that using xxx port
+mount /dev/vdb /mnt/data1 # mount a disk
 ```
 
 ## Python
