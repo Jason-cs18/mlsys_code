@@ -4,14 +4,13 @@
 <summary><b>Table of Contents</b> (click to open)</summary>
 
 - [Building a AI Platform with Ray Cluster](#building-a-ai-platform-with-ray-cluster)
-  - [Installing Ray Cluster](#installing-ray-cluster)
+  - [Install Ray Cluster](#install-ray-cluster)
   - [Pre-requisites](#pre-requisites)
   - [Setup Ray Cluster](#setup-ray-cluster)
   - [Data Analysis on MNIST Dataset](#data-analysis-on-mnist-dataset)
   - [Training a Model on MNIST Dataset](#training-a-model-on-mnist-dataset)
   - [Deploying a Model on AI Platform](#deploying-a-model-on-ai-platform)
   - [Monitoring and Scaling the Model](#monitoring-and-scaling-the-model)
-  - [License](#license)
 
 </details>
 
@@ -28,3 +27,4 @@
 ## Deploying a Model on AI Platform
 
 ## Monitoring and Scaling the Model
+x
